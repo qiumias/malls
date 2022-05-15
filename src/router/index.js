@@ -9,6 +9,8 @@ const Market = () =>
     import ('../view/market/market.vue')
 const My = () =>
     import ('../view/my/my.vue')
+const Detail = () =>
+    import ('../view/detail/Detail.vue')
 
 Vue.use(Router)
 
@@ -31,6 +33,10 @@ const routes = [{
     {
         path: '/my',
         component: My
+    },
+    {
+        path: '/detail/:iid',
+        component: Detail
     },
 ]
 const router = new Router({
